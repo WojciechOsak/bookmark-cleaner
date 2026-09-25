@@ -1,27 +1,27 @@
 # Bookmark Cleaner
 
-Przeglądaj, porządkuj i usuwaj zakładki Chrome w jednym widoku. Rozszerzenie działa lokalnie; zakładki nie są przesyłane na serwer.
+Browse, organize, and delete Chrome bookmarks in one full-page view. Bookmark Cleaner runs locally and does not send your bookmarks to a server.
 
-[![Postaw kawę](store/coffee-button.svg)](https://buymeacoffee.com/osakwojcie1)
+[![Buy me a coffee](store/coffee-button.svg)](https://buymeacoffee.com/osakwojcie1)
 
-![Bookmark Cleaner — widok zakładek](store/screenshot-overview.png)
+![Bookmark Cleaner bookmark manager](store/screenshot-overview.png)
 
-## Funkcje
+## Features
 
-- Drzewo folderów, wyszukiwanie po nazwie i adresie oraz widok pustych folderów.
-- Przenoszenie zakładek i folderów do innych folderów metodą przeciągnij i upuść.
-- Zaznaczanie wielu elementów, usuwanie i cofnięcie ostatniej operacji.
-- Sortowanie i tryb ciemny zgodny z ustawieniem systemu.
+- Browse the folder tree, search by title or URL, and find empty folders.
+- Drag bookmarks and folders into other folders.
+- Select and delete multiple items, then undo the last deletion.
+- Sort bookmarks and use a dark theme that follows your system setting.
 
-## Instalacja lokalna
+## Install manually
 
-1. Pobierz repozytorium lub archiwum ZIP i rozpakuj je.
-2. Otwórz `chrome://extensions` i włącz tryb deweloperski.
-3. Kliknij **Załaduj rozpakowane** i wybierz katalog zawierający `manifest.json`.
-4. Kliknij ikonę rozszerzenia, aby otworzyć menedżer w nowej karcie.
+1. Download [`bookmark-cleaner-v2.3.1.zip`](https://github.com/WojciechOsak/bookmark-cleaner/releases/download/v2.3.1/bookmark-cleaner-v2.3.1.zip) and extract it.
+2. Open `chrome://extensions` and enable **Developer mode**.
+3. Click **Load unpacked** and select the extracted folder containing `manifest.json`.
+4. Click the extension icon to open the bookmark manager in a new tab.
 
-Uprawnienie `bookmarks` służy do odczytu i modyfikacji zakładek. Uprawnienie `storage` przechowuje lokalnie ostatnią usuniętą partię do cofnięcia. Szczegóły: [Prywatność](PRIVACY.md).
+The `bookmarks` permission lets the extension read and change bookmarks at your request. The `storage` permission keeps the most recently deleted batch locally so you can undo it. See the [privacy policy](PRIVACY.md).
 
-## Wsparcie
+## Support
 
-[Buy Me a Coffee](https://buymeacoffee.com/osakwojcie1) · Zgłaszanie problemów: GitHub Issues.
+[Buy Me a Coffee](https://buymeacoffee.com/osakwojcie1) · [Report an issue](https://github.com/WojciechOsak/bookmark-cleaner/issues)
