@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bookmark Cleaner</title>
+  <link rel="stylesheet" href="manager.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <h1>Bookmark Cleaner</h1>
+          <p>Porządki w zakładkach</p>
+        </div>
+      </div>
+
+      <nav class="quick-nav">
+        <button id="showAllBtn" class="nav-btn active-ish">
+          <span class="nav-icon" data-icon="bookmarks"></span>
+          <span>Wszystkie zakładki</span>
+        </button>
+
+        <button id="emptyFoldersBtn" class="nav-btn">
+          <span class="nav-icon" data-icon="folder-empty"></span>
+          <span>Puste foldery</span>
+        </button>
+      </nav>
+
+      <div class="section-label">
+        <span>Foldery</span>
+        <span class="hint">Przeciągnij tu zakładkę</span>
+      </div>
+
+      <div id="folderTree" class="folder-tree"></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="search-shell">
+          <span class="search-icon" data-icon="search"></span>
+          <input id="searchInput" type="search" placeholder="Szukaj po nazwie lub adresie URL…">
+          <span id="resultCount" class="result-count"></span>
+        </div>
+
+        <div class="toolbar-actions">
+          <a class="btn btn-coffee" href="https://buymeacoffee.com/osakwojcie1" target="_blank" rel="noopener noreferrer" aria-label="Postaw mi kawę na Buy Me a Coffee">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h13v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8Z"/><path d="M17 9h2a3 3 0 0 1 0 6h-2M3 21h16M8 3v2M13 3v2"/></svg>
+            Postaw kawę
+          </a>
+          <button id="undoBtn" class="btn btn-secondary" disabled>
+            <span data-icon="undo"></span>
+            Cofnij
+          </button>
+          <button id="deleteSelectedBtn" class="btn btn-danger" disabled>
+            <span data-icon="trash"></span>
+            Usuń zaznaczone
+          </button>
+        </div>
+      </header>
+
+      <section class="content">
+        <div class="content-head">
+          <div>
+            <div id="breadcrumbs" class="breadcrumbs"></div>
+            <div id="viewTitle" class="view-title">Zakładki</div>
+          </div>
+
+          <div class="content-actions">
+            <label class="select-visible">
+              <input id="selectAll" type="checkbox">
+              <span>Zaznacz widoczne</span>
+            </label>
+
+            <select id="sortSelect" aria-label="Sortowanie">
+              <option value="default">Kolejność Chrome</option>
+              <option value="name">Nazwa A–Z</option>
+              <option value="newest">Najnowsze</option>
+              <option value="oldest">Najstarsze</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="notice" class="notice hidden"></div>
+        <div id="items" class="items"></div>
+      </section>
+    </main>
+  </div>
+
+  <div id="dragGhost" class="drag-ghost hidden"></div>
+
+  <script src="manager.js"></script>
+</body>
+</html>

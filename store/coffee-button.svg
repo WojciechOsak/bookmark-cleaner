@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="172" height="36" viewBox="0 0 172 36" role="img" aria-label="Postaw mi kawę">
+  <rect width="172" height="36" rx="8" fill="#ffdc80"/>
+  <path d="M14 12h12v7a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4v-7Zm12 1h2a3 3 0 0 1 0 6h-2M13 26h17M18 7v2m5-2v2" fill="none" stroke="#382800" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="40" y="23" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#382800">Postaw mi kawę</text>
+</svg>
